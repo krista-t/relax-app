@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: rgb(3, 1, 7);
+
+}
+
+@media only screen and (max-width: 700px) {
+  img{
+    display: none;
+  }
+ body {
+   background-image: url(./img/background.svg);
+   background-position-x: -300px;
+   background-position-y: -160px;
+ }
+}
+
+
+ img {
+  max-width: 100%;
+  max-height: auto;
+} 
