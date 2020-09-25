@@ -25,17 +25,18 @@ body {
     background-position-x: -380px;
     background-position-y: -10px;
   }
-  #container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    position: relative;
-    transform: scale(1);
-  }
+
+  .circle {
+    position: absolute;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 100px;
+    left: 0px;
+    background: rgb(14, 8, 27);
   
+  }
 
 }
 
