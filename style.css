@@ -60,14 +60,6 @@ body {
 
 }
 
-@media only screen and (max-width : 321px) {
-
-  .circle {
-    margin-top: -250px !important;
-
-  }
-
-}
 
 #container {
   display: grid;
