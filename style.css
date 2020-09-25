@@ -25,6 +25,18 @@ body {
     background-position-x: -380px;
     background-position-y: -10px;
   }
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+    transform: scale(1);
+  }
+  
+
 }
 
 
