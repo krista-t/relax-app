@@ -1,26 +1,136 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
-
+  background-image: url("./img/background.svg");
   background-color: rgb(3, 1, 7);
-
+  min-height: 100vw;
+  overflow: hidden;
+  font-display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
+
+/***IMAGE SHOWS FULLY IN PORTRAIT MODE ON MOBILE***/
 @media only screen and (max-width: 700px) {
-  img{
-    display: none;
-  }
  body {
-   background-image: url(./img/background.svg);
-   background-position-x: -300px;
-   background-position-y: -160px;
+   background-image: url("./img/background.svg");
+   background-position-x: -400px;
+   background-position-y: -90px;
  }
 }
 
 
- img {
-  max-width: 100%;
-  max-height: auto;
-} 
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  transform: scale(1);
+}
+
+ .circle { 
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  top:  160px;
+  left: 20px;
+  background: rgb(14, 8, 27); 
+  
+}   
+
+#container.grow {
+  animation: grow 3s linear forwards;
+}
+
+#container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+
+/**OPEN IN CHROME TO SE conic-gradient**/
+
+.gradient-circle {
+position: absolute;
+z-index: -2;
+width: 320px;
+height: 320px;
+border-radius: 50%;
+top: 150px;
+left: 10px;
+background-color: rgb(147, 126, 161);
+background: conic-gradient(
+    #1e0452 10%,
+    #2705e9  30%,
+    #f6f5f8 50%, 
+    #311d5f  75%, 
+    #4a19a5  100%
+  ); 
+}
+
+.ponter-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+
+}
+
+.pointer {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: block;
+  margin-top: -15px;
+  margin-left: 35px;
+}
+
+
+/**ANIMATIONS**/
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+
+  }
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+
+  }
+  to {
+    transform: scale(1.2);
+
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+
+  }
+  to {
+    transform: scale(1);
+
+  }
+}
+
