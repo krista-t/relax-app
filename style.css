@@ -25,14 +25,25 @@ body {
     background-position-x: -380px;
     background-position-y: -10px;
   }
+
+  #container {
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+    height: 100px;
+  width: 100px;
+
+  }
+
+
 .circle {
   height: 100px;
   width: 100px;
 }
  
 .gradient-circle {
-  height: 170px;
-  width: 170px;
+  height: 210px;
+  width: 210px;
 }
 
 .pointer {
