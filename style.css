@@ -59,10 +59,10 @@ p {
 @media only screen and (min-width: 640px) and (max-width: 384px){
 
   .circle, .gradient-circle {
-    margin-top: -50px;
+    margin-top: -50px  !important;
   }
   p{
-    margin-top: 260px !important;
+    margin-top: 210px !important;
   }
 }
 #container {
