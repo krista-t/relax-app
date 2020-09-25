@@ -22,8 +22,8 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     background-image: url("./img/background.svg");
-    background-position-x: -400px;
-    background-position-y: -10px;
+    background-position-x: -410px;
+    background-position-y: -20px;
   }
 
 
@@ -31,7 +31,7 @@ body {
     max-width: 200px;
     max-height: 200px;
     margin-left: 50px !important;
-    margin-top: 120px !important;
+    margin-top: 110px !important;
 
 
   }
@@ -40,21 +40,21 @@ body {
     max-height: 220px;
     max-width: 220px;
     margin-left: 40px !important;
-    margin-top: 110px !important;
+    margin-top: 100px !important;
   }
 
 
   #pointer-container {
     max-width: 10px;
     max-height: 130px;
-    margin-top: 90px !important;
+    margin-top: 80px !important;
 
   }
 
   p {
     font-size: 2rem !important;
     margin-left: 40px !important;
-    margin-top: 200px !important;
+    margin-top: 190px !important;
 
   }
 
