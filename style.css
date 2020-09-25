@@ -27,7 +27,6 @@ body {
   }
 
 
-
 .circle {
   max-width: 200px;
   max-height: 200px;
@@ -57,7 +56,15 @@ p {
 
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
+  .circle, .gradient-circle {
+    margin-top: -50px;
+  }
+  p{
+    margin-top: 260px !important;
+  }
+}
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -80,6 +87,7 @@ p {
   background: rgb(14, 8, 27);
 
 }
+
 
 
 /**OPEN IN CHROME TO SE conic-gradient**/
