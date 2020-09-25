@@ -10,17 +10,17 @@ const inhaleTime = (totalTime / 4.5) * 2;
 //one function to do it all
 function breathe() {
 
-//set text and animation for inhale 
-text.innerHTML = "INHALE"
-container.className = "grow"  
+  //set text and animation for inhale 
+  text.innerHTML = "INHALE"
+  container.className = "grow"
 
-//set text and animation, and time  for exhale
-setTimeout(() => {
+  //set text and animation, and time  for exhale
+  setTimeout(() => {
 
-text.innerHTML = "EXHALE"
-container.className = "shrink"
-  
-}, inhaleTime);
+    text.innerHTML = "EXHALE"
+    container.className = "shrink"
+
+  }, inhaleTime);
 
 }
 
@@ -28,4 +28,3 @@ container.className = "shrink"
 breathe();
 
 setInterval(breathe, totalTime);
-
