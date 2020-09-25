@@ -22,7 +22,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     background-image: url("./img/background.svg");
-    background-position-x: -380px;
+    background-position-x: -400px;
     background-position-y: -10px;
   }
 
@@ -62,7 +62,7 @@ body {
 
 @media only screen and (max-width : 321px) {
   .circle {
-    margin-top: 40px !important;
+    margin-top: 20px !important;
 
   }
 
