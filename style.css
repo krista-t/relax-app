@@ -59,6 +59,14 @@ p {
 
 }
 
+@media only screen and (max-width : 321px) {
+ .circle {
+  margin-top: 20px !important;
+
+ }
+
+  }
+
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
