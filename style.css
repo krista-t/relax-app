@@ -31,6 +31,7 @@ body {
   max-width: 200px;
   max-height: 200px;
   margin-left: 50px !important;
+  margin-top: 100px !important;
 
 
 }
@@ -39,32 +40,25 @@ body {
   max-height: 220px;
   max-width: 220px;
   margin-left: 40px !important;
+  margin-top: 90px !important;
 }
 
 
 #pointer-container {
    max-width: 10px;
    max-height: 130px;
+   margin-top: 70px !important;
    
   }
 p {
   font-size: 2rem !important;
   margin-left: 40px !important;
-  margin-top: 260px !important;
+  margin-top: 180px !important;
   
 }
 
 }
 
-@media only screen and (min-width: 384px) and (max-width: 640px){
-
-  .circle, .gradient-circle {
-    margin-top: -100px  !important;
-  }
-  p{
-    margin-top: 160px !important;
-  }
-}
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
