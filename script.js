@@ -25,6 +25,6 @@ function breathe() {
 }
 
 
-breathe();
 
+breathe();
 setInterval(breathe, totalTime);
