@@ -1,215 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Epilogue:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&family=Epilogue:wght@200&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Epilogue', sans-serif;
-  background-image: url("./img/background\ .svg");
+  font-family: "Epilogue", sans-serif;
+  background-image: url("night-train.svg");
   background-color: rgb(3, 1, 7);
-  height: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   overflow: hidden;
   font-display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-}
-
-
-/***IMAGE SHOWS FULLY IN PORTRAIT MODE ON MOBILE***/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-    background-image: url("./img/background\ .svg");
-    background-repeat: repeat-x;
-    min-width:  100vw;
-    background-position-x: -410px;
-    background-position-y: -20px;
-  }
-
-
-  .circle {
-    max-width: 200px;
-    max-height: 200px;
-    margin-left: 50px !important;
-    margin-top: 110px !important;
-
-
-  }
-
-  .gradient-circle {
-    max-height: 220px;
-    max-width: 220px;
-    margin-left: 40px !important;
-    margin-top: 100px !important;
-  }
-
-
-  #pointer-container {
-    max-width: 10px;
-    max-height: 130px;
-    margin-top: 80px !important;
-
-  }
-
-  p {
-    font-size: 2rem !important;
-    margin-left: 40px !important;
-    margin-top: 190px !important;
-
-  }
-
-}
-
-
-/**BIG DESKTOP**/
-@media(min-width: 1280px){
-
-  body {
-    font-family: 'Epilogue', sans-serif;
-    background-image: url("./img/background\ .svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgb(3, 1, 7);
-    height: 100vw;
-    overflow: hidden;
-    font-display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
- 
-
-
-
 }
 
 #container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
   height: 300px;
   width: 300px;
-  margin: auto;
   position: relative;
   transform: scale(1);
 }
 
 .circle {
-  grid-area: 1/1/2/2;
-  z-index: -1;
-  width: 350px;
-  height: 350px;
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
-  margin-top: 180px;
-  margin-left: -20px;
-  background: rgb(14, 8, 27);
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-
-
-/**OPEN IN CHROME TO SE conic-gradient**/
-
 .gradient-circle {
-  grid-area: 1/1/2/2;
+  background: conic-gradient(
+    #6d0975 10%,
+    #7d6ae7 30%,
+    #f6f5f8 50%,
+    #6d0975 75%,
+    #4a3d63 100%
+  );
+  height: 320px;
+  width: 320px;
   z-index: -2;
-  width: 370px;
-  height: 370px;
   border-radius: 50%;
-  margin-top: 170px;
-  margin-left: -30px;
-  background-color: rgb(147, 126, 161);
-  background: conic-gradient(#1e0452 10%,
-      #2705e9 30%,
-      #f6f5f8 50%,
-      #311d5f 75%,
-      #4a19a5 100%);
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
 #pointer-container {
-  grid-area: 1/1/2/2;
+  position: absolute;
+  top: -40px;
+  left: 140px;
   width: 20px;
-  height: 200px;
-  margin-top: 150px;
-  margin-left: 145px;
+  height: 190px;
   animation: rotate 9s linear forwards infinite;
-  transform-origin: bottom;
-
+  transform-origin: bottom center;
+  -webkit-animation: rotate 9s linear forwards infinite;
 }
 
 .pointer {
-  background-color: rgb(10, 10, 175);
+  background-color: #fff;
+  border-radius: 50%;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
-  border: 1px solid rgb(179, 154, 182);
-
-
+  display: block;
 }
 
 p {
-  grid-area: 1/1/2/2;
   font-size: 3rem;
-  color: beige;
+  color: #fff;
   text-align: center;
-  margin-left: -20px;
-  margin-top: 325px;
-
-
 }
 
 .rotate {
   animation: rotate 9s linear forwards infinite;
-
+  -webkit-animation: rotate 9s linear forwards infinite;
 }
 
 .grow {
-  animation: grow 3.4s linear forwards;
+  animation: grow 3s linear forwards;
+  -webkit-animation: grow 3s linear forwards;
 }
 
 .shrink {
-  animation: shrink 4s linear forwards;
+  animation: shrink 3s linear forwards;
+  -webkit-animation: shrink 3s linear forwards;
 }
 
-
-
 /**ANIMATIONS**/
-
 
 @keyframes rotate {
   from {
     transform: rotate(0deg);
-
   }
 
   to {
     transform: rotate(360deg);
-
   }
 }
 
 @keyframes grow {
   from {
     transform: scale(1);
-
   }
 
   to {
     transform: scale(1.2);
-
   }
 }
 
 @keyframes shrink {
   from {
     transform: scale(1.2);
-
   }
 
   to {
     transform: scale(1);
+  }
+}
 
+/***background img adjusted according to different screen sizes***/
+/***MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  body {
+    min-width: 100vw;
+    background-position-x: -250px;
+  }
+  #container {
+    margin: 20% 5px 0 25px;
+  }
+
+  .circle {
+    height: 80%;
+    width: 80%;
+    left: 2rem;
+  }
+
+  .gradient-circle {
+    height: 260px;
+    width: 260px;
+    top: -10px;
+    left: 1.4rem;
+  }
+
+  #pointer-container {
+    top: -30px;
+    left: 140px;
+    width: 20px;
+    height: 150px;
+  }
+
+  .pointer {
+    height: 20px;
+    width: 20px;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #container {
+    margin: 10% auto;
+  }
+
+  .circle {
+    height: 80%;
+    width: 80%;
+    left: 2rem;
+  }
+
+  .gradient-circle {
+    height: 260px;
+    width: 260px;
+    top: -10px;
+    left: 1.4rem;
+  }
+
+  #pointer-container {
+    top: -30px;
+    left: 140px;
+    width: 20px;
+    height: 150px;
+  }
+
+  .pointer {
+    height: 20px;
+    width: 20px;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-top: -20px;
+  }
+}
+
+/**BIG DESKTOP**/
+@media (min-width: 1280px) {
+  body {
+    background-position-y: -1000px;
   }
 }
