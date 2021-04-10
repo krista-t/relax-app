@@ -131,7 +131,7 @@ p {
 
 /***background img adjusted according to different screen sizes***/
 /***MOBILE*/
-@media only screen and (min-width: 320px) and (max-width: 667px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     min-width: 100vw;
     background-position-x: -250px;
@@ -171,44 +171,8 @@ p {
   }
 }
 
-@media (max-width: 767px) {
-  #container {
-    margin: 10% auto;
-  }
-
-  .circle {
-    height: 80%;
-    width: 80%;
-    left: 2rem;
-  }
-
-  .gradient-circle {
-    height: 260px;
-    width: 260px;
-    top: -10px;
-    left: 1.4rem;
-  }
-
-  #pointer-container {
-    top: -30px;
-    left: 140px;
-    width: 20px;
-    height: 150px;
-  }
-
-  .pointer {
-    height: 20px;
-    width: 20px;
-  }
-
-  p {
-    font-size: 2rem;
-    margin-top: -20px;
-  }
-}
-
 /**BIG DESKTOP**/
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   body {
     background-position-y: -1000px;
   }
