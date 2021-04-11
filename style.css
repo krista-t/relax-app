@@ -131,13 +131,13 @@ p {
 
 /***background img adjusted according to different screen sizes***/
 /***MOBILE*/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 640px) {
   body {
     min-width: 100vw;
-    background-position-x: -250px;
+    background-position-x: -300px;
   }
   #container {
-    margin: 20% 5px 0 25px;
+    margin: 20% auto;
   }
 
   .circle {
@@ -172,8 +172,14 @@ p {
 }
 
 /**BIG DESKTOP**/
-@media (max-width: 1280px) {
+@media (min-width: 1400px) {
   body {
-    background-position-y: -1000px;
+    background-position-y: -500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-position-y: -800px;
   }
 }
